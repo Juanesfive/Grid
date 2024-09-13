@@ -1,0 +1,31 @@
+@import url(style.css);
+
+.grid--explicita {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+   'header header header header header header header'
+  '.sidebar-left content content content sidebar-right';
+}
+
+.header{
+  grid-area: header;
+  background-color: brown;
+}
+
+.sidebar-left{
+  grid-area: sidebar-left;
+  background-color: steelblue;
+}
+
+.container{
+  grid-area: content;
+  background-color: rgb(76, 69, 69);
+}
+
+.sidebar-right{
+  grid-area: sidebar-right;
+  background-color: steelblue;
+}

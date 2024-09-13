@@ -1,12 +1,18 @@
 @import url(/style.css);
 
+body{
+  height: 100vh;
+}
+
 .grid-area{
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 60px 1fr;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 1fr;
   grid-template-areas: 
-  "header header"
-  "sidebar content";
+  'header header header header header header'
+  '.sidebar-left container container sidebar-right.';
+
 }
 
 .header{
@@ -14,7 +20,22 @@
   background-color: brown;
 }
 
-.sidebar{
+.sidebar-left{
+  grid-area: sidebar-left;
+  background-color: steelblue;
+}
+
+.container{
+  grid-area: container;
+  background-color: rgb(76, 69, 69);
+}
+
+.sidebar-right{
+  grid-area: sidebar-right;
+  background-color: steelblue;
+}
+
+/* .sidebar{
   grid-area: sidebar;
   background-color: skyblue;
 }
@@ -22,4 +43,4 @@
 .content{
   grid-area: content;
   background-color: purple;
-}
+} */

@@ -1,0 +1,28 @@
+@import url(style.css);
+
+
+
+.grid--dense{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+/* .item:nth-child(9){
+  background-color: red;
+  color: white;
+  grid-row: span;
+} */
+
+.item:nth-child(11)
+{
+  /* background-color: yellow; */
+  grid-auto-flow: column;
+}
+
+.item:nth-child(13){
+  background-color: hsl(84, 100%, 29%);
+  grid-row: 1 / 6;
+  grid-column: 3;
+}
