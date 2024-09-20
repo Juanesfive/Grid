@@ -1,0 +1,10 @@
+@import url(style.css);
+
+/* .contenedor{
+  width: 800px;
+} */
+
+.grid__dinamica{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}

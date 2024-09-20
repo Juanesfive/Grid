@@ -1,0 +1,25 @@
+@import url(style.css);
+
+.grid__anidada{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  
+
+}
+
+/* .item:nth-child(5){
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+} */
+
+.subgrid{
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  grid-column: span 3;
+  grid-row: 2/3;
+
+
+}
